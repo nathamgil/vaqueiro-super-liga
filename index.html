@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vaqueiro Super Liga — Senhas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=20261112172602">
+</head>
+<body>
+<div class="aviso">Demonstração feita pela <b>Zync</b> · cidades, parques, preços e nomes são de exemplo</div>
+<header class="topo"><div class="in">
+  <a class="marca" href="#"><span class="selo"><span>★ Vaqueiro Super Liga</span></span></a>
+  <nav>
+    <a href="#etapas" class="hide-m">Etapas</a>
+    <a href="#conta" class="ativo">Minha conta</a>
+    <a href="admin.html">Painel</a>
+  </nav>
+</div></header>
+
+<section class="hero"><div class="in">
+  <p class="cond" style="color:var(--ouro);font-size:15px;margin:0 0 8px">8 cidades baianas · temporada 2026/27</p>
+  <h1>Compre sua senha<br><em>direto no site</em></h1>
+  <p>Escolha a etapa, a categoria e a dupla. Pague no Pix e a senha sai na hora. O valor do parque cai direto na conta do parque, e a taxa da liga é separada automaticamente.</p>
+  <a class="btn btn-v" href="#conta" onclick="irPara('comprar')">Comprar senha</a>
+</div></section>
+
+<main class="wrap">
+  <div class="titulo-sec" id="etapas"><h2>Calendário de etapas</h2><span class="risco"></span></div>
+  <div class="grade g4" id="lista-etapas"></div>
+
+  <div class="titulo-sec" id="conta"><h2>Minha conta</h2><span class="risco"></span><span class="mini">Olá, <b>Cristian!</b> · Dono de haras / equipe</span></div>
+  <div class="conta">
+    <aside class="menu-conta">
+      <button data-aba="comprar" class="ativo">Comprar senha</button>
+      <button data-aba="vaqueiros">Meus vaqueiros</button>
+      <button data-aba="senhas">Minhas senhas</button>
+    </aside>
+    <section id="aba"></section>
+  </div>
+</main>
+
+<footer class="rodape"><b>Vaqueiro Super Liga</b> · demo de venda de senhas com split de pagamento · feito pela Zync</footer>
+
+<button class="chat-bt" id="chat-bt">💬 Tirar dúvida</button>
+<div class="chat" id="chat">
+  <header><b class="cond">Assistente da Liga</b><small>IA que responde 24h · nesta demo as respostas são simuladas</small></header>
+  <div class="msgs" id="msgs"></div>
+  <div class="sugs" id="sugs"></div>
+  <form id="chat-form"><input id="chat-in" placeholder="Escreva sua dúvida…" autocomplete="off"><button>Enviar</button></form>
+</div>
+
+<script src="assets/data.js?v=20261112172602"></script>
+<script src="assets/site.js?v=20261112172602"></script>
+</body>
+</html>
